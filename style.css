@@ -1,0 +1,148 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+}
+
+/* Темная тема */
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+/* Шапка */
+header {
+    padding: 50px 20px;
+}
+
+/* Стили для заголовка */
+.title {
+    font-size: 50px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Цвета заголовка при разных темах */
+.light .title {
+    color: black;
+}
+
+.dark .title {
+    color: white;
+}
+
+/* Кнопка переключения темы */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 1000;
+}
+
+.light .theme-toggle {
+    background-color: black;
+    color: white;
+}
+
+.dark .theme-toggle {
+    background-color: white;
+    color: black;
+}
+
+/* Кнопки соцсетей */
+.social-buttons {
+    margin-top: 30px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin: 15px;
+}
+
+/* YouTube */
+.youtube-button {
+    background: red;
+    color: white;
+}
+
+.youtube-button:hover {
+    background: white;
+    color: red;
+}
+
+/* Discord */
+.discord-button {
+    background: #5865F2;
+    color: white;
+}
+
+.discord-button:hover {
+    background: white;
+    color: #5865F2;
+}
+
+/* Telegram */
+.telegram-button {
+    background: #0088CC;
+    color: white;
+}
+
+.telegram-button:hover {
+    background: white;
+    color: #0088CC;
+}
+
+/* Описание блоков */
+.info-section {
+    max-width: 70%;
+    margin: 50px auto;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Цвета описаний */
+.youtube-info {
+    background-color: red;
+}
+
+.discord-info {
+    background-color: #5865F2;
+}
+
+.telegram-info {
+    background-color: #0088CC;
+}
+
+/* Подвал */
+footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+}
